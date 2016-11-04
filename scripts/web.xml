@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+    <servlet>
+        <servlet-name>JsonRpcServlet</servlet-name>
+        <servlet-class>narrativedownloadsupport.NarrativeDownloadSupportServer</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DownloadServlet</servlet-name>
+        <servlet-class>narrativedownloadsupport.DownloadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>JsonRpcServlet</servlet-name>
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DownloadServlet</servlet-name>
+        <url-pattern>/download</url-pattern>
+    </servlet-mapping>
+</web-app>
+
